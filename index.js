@@ -23,9 +23,9 @@ window.onload = function() {
         //put your own code here etc.
         // alert('Shake!');
         // remove gif and show coupon
-        document.getElementById('gif').style.display = 'none';
+        document.getElementsByClassName('gif').style.display = 'none';
         // display the coupon value to the user
-        document.getElementById('coupon').style.display = 'block';
+        document.getElementsByClassName('coupon').style.display = 'block';
         // capture the date and time of shake
         var d = new Date();
         var n = d.getTime();
@@ -34,6 +34,5 @@ window.onload = function() {
         p.innerHTML = n;
         document.getElementById('coupon').appendChild(p);
         
-
     }
 };

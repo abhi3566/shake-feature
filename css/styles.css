@@ -4,12 +4,15 @@
     justify-content: center;
 }
 
-/* align h1 and h3 in center */
-
-h1,
-h3 {
+/* align h1 and h3 in center in all screen */
+h1, h3 {
+    display: flex;
+    justify-content: center;
     text-align: center;
+
 }
+
+
 
 /* add dotted border to the gif */
 
