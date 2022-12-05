@@ -1,0 +1,5 @@
+/* align container in center */
+.container {
+    display: flex;
+    justify-content: center;
+}
