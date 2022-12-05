@@ -6,9 +6,9 @@ window.onload = function() {
 
     // get the user mobile number and coupon value from the url
 
-    var url = window.location.href;
-    var mobile = url.split('?')[1].split('&')[0].split('=')[1];
-    var coupon = url.split('?')[1].split('&')[1].split('=')[1];
+    // var url = window.location.href;
+    // var mobile = url.split('?')[1].split('&')[0].split('=')[1];
+    // var coupon = url.split('?')[1].split('&')[1].split('=')[1];
 
     
 
