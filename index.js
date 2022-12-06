@@ -26,6 +26,7 @@ window.onload = function() {
         document.getElementById('gif').style.display = 'none';
         // remove h3 of id remo
         document.getElementById('remo').style.display = 'none';
+        document.getElementById('delo').style.display = 'none';
         // display gif2
         document.getElementById('gif2').style.display = 'block';
         // display the coupon value to the user
