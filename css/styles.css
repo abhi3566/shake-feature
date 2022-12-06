@@ -18,8 +18,8 @@ h3 {
 /* add dotted border to the gif */
 
 .content-gif-voucher {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     border: 5px dotted #bbb;
     /* Dotted border */
     border-radius: 15px;
