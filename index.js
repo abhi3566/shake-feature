@@ -24,6 +24,8 @@ window.onload = function() {
         // alert('Shake!');
         // remove gif and show coupon
         document.getElementById('gif').style.display = 'none';
+        // display gif2
+        document.getElementById('gif2').style.display = 'block';
         // display the coupon value to the user
         document.getElementById('coupon').style.display = 'block';
         // capture the date and time of shake
