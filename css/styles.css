@@ -1,9 +1,8 @@
-@media (min-width: 950px) {
-    
-
+@media (max-width: 767px) {
 .container {
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 
 /* align h1 and h3 in center in all screen and mobile screen */
@@ -19,6 +18,8 @@ h3 {
 /* add dotted border to the gif */
 
 .content-gif-voucher {
+    display: flex;
+    justify-content: center;
     border: 5px dotted #bbb;
     /* Dotted border */
     border-radius: 15px;
