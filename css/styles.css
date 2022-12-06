@@ -8,8 +8,8 @@
 
 /* align h1 and h3 in center in all screen and mobile screen */
 h1, h3 {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     text-align: center;
 }
 
