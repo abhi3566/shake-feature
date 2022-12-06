@@ -33,6 +33,9 @@ window.onload = function() {
         var p = document.createElement('p');
         p.innerHTML = n;
         document.getElementById('coupon').appendChild(p);
+
+        // stop listening to device motion
+        myShakeEvent.stop();
         
     }
 };
