@@ -1,4 +1,6 @@
 /* align container in center */
+@media only screen and (min-device-width: 480px) {
+
 .container {
     display: flex;
     justify-content: center;
@@ -36,3 +38,5 @@ h3{
     75% { transform: translateX(5px) }
     100% { transform: translateX(0) }
   }
+
+}
