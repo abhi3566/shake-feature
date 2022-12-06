@@ -21,11 +21,11 @@ window.onload = function() {
     //shake event callback
     function shakeEventDidOccur () {
         //put your own code here etc.
-        // alert('Shake!');
+        alert('Shake!');
         // remove gif and show coupon
-        document.getElementsByClassName('gif').style.display = 'none';
+        document.getElementById('gif').style.display = 'none';
         // display the coupon value to the user
-        document.getElementsByClassName('coupon').style.display = 'block';
+        document.getElementById('coupon').style.display = 'block';
         // capture the date and time of shake
         var d = new Date();
         var n = d.getTime();
