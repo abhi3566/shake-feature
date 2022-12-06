@@ -21,7 +21,7 @@ window.onload = function() {
     //shake event callback
     function shakeEventDidOccur () {
         //put your own code here etc.
-        alert('Shake!');
+        // alert('Shake!');
         // remove gif and show coupon
         document.getElementById('gif').style.display = 'none';
         // display the coupon value to the user
