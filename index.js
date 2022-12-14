@@ -12,9 +12,10 @@ window.onload = function() {
 
     // call api to get the coupon value and mobile number using axios
 
+    var random = Math.floor(Math.random() * 100);
     const options = {
         method: 'GET',
-        url: 'https://jsonplaceholder.typicode.com/posts',
+        url: 'https://jsonplaceholder.typicode.com/posts/'+random,
         headers: {
             'Content-Type': 'application/json'
         }
@@ -23,10 +24,10 @@ window.onload = function() {
     axios.request(options).then(function (response) {
         console.log(response.data);
         // get random id each time
-        var random = Math.floor(Math.random() * 100);
+        // var random = Math.floor(Math.random() * 100);
         // get the mobile number and coupon value from the api response
         // var mobile = response.data[random].userId;
-        var coupon = response.data[random].title;
+        var coupon = response.data.title;
         // display the coupon value to the user
         console.log(coupon);
         document.getElementById('coupon').innerHTML = coupon;
