@@ -10,9 +10,44 @@ window.onload = function() {
     // var mobile = url.split('?')[1].split('&')[0].split('=')[1];
     // var coupon = url.split('?')[1].split('&')[1].split('=')[1];
 
-    
+    // call api to get the coupon value and mobile number using axios
+
+    const options = {
+        method: 'GET',
+        url: 'https://jsonplaceholder.typicode.com/posts',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+
+    axios.request(options).then(function (response) {
+        console.log(response.data);
+        // get random id each time
+        var random = Math.floor(Math.random() * 100);
+        // get the mobile number and coupon value from the api response
+        // var mobile = response.data[random].userId;
+        var coupon = response.data[random].title;
+        // display the coupon value to the user
+        console.log(coupon);
+        document.getElementById('coupon').innerHTML = coupon;
+        // display the mobile number to the user
+        // document.getElementById('mobile').innerHTML = mobile;
+    }).catch(function (error) { 
+        console.error(error);
+    });
+
+        
+
+
+
+
 
     
+
+
+
+
+
 
     // start listening to device motion
     myShakeEvent.start();
@@ -41,6 +76,9 @@ window.onload = function() {
 
         // stop listening to device motion
         myShakeEvent.stop();
+        
+        // call api to save the coupon value and mobile number with the date and time
+
         
     }
 };
